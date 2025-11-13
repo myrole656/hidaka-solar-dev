@@ -26,11 +26,26 @@ const Footer: React.FC = () => {
                             </div>
                              <div className="flex items-center">
                                 <img src="https://api.iconify.design/lucide/phone.svg?color=%23d1d5db" alt="phone" className="w-5 h-5 mr-3" />
-                                <a href="tel:601154071220" className="hover:text-purple-400 transition-colors">011-5407 1220</a>
+                                <a href="tel:60194444969" className="hover:text-purple-400 transition-colors">019-444 4969</a>
+                                &nbsp; &nbsp;  &nbsp; &nbsp;
+                                <img src="https://api.iconify.design/lucide/phone.svg?color=%23d1d5db" alt="phone" className="w-5 h-5 mr-3" />
+                                <a href="tel:60197521512" className="hover:text-purple-400 transition-colors">019-752 1512</a>
+
                             </div>
+                            
+                            <div className="flex items-center">
+                                <p> Tel : </p>
+                                <a href="tel:60197521512" className="hover:text-purple-400 transition-colors">019-752 1512 </a>
+                                &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;
+                                <p> Fax : </p>
+                                <a href="tel:60197521512" className="hover:text-purple-400 transition-colors">019-752 1512</a>
+                                
+                            </div>
+
+                            
                             <div className="flex items-center">
                                 <img src="https://api.iconify.design/lucide/mail.svg?color=%23d1d5db" alt="email" className="w-5 h-5 mr-3" />
-                                <a href="mailto:qistiamaluddin7@gmail.com" className="hover:text-purple-400 transition-colors">qistiamaluddin7@gmail.com</a>
+                                <a href="mailto:hidakacommunication09@gmail.com" className="hover:text-purple-400 transition-colors">hidakacommunication09@gmail.com</a>
                             </div>
                         </address>
                     </div>

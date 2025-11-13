@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 interface TeamMemberProps {
   imageUrl: string;
@@ -7,7 +7,12 @@ interface TeamMemberProps {
   certifications: string[];
 }
 
-const TeamMemberCard: React.FC<TeamMemberProps> = ({ imageUrl, name, title, certifications }) => (
+const TeamMemberCard: React.FC<TeamMemberProps> = ({
+  imageUrl,
+  name,
+  title,
+  certifications,
+}) => (
   <div className="text-center bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 h-full flex flex-col">
     <img
       className="w-32 h-32 rounded-full mx-auto mb-4 object-cover ring-4 ring-purple-200"
@@ -15,13 +20,13 @@ const TeamMemberCard: React.FC<TeamMemberProps> = ({ imageUrl, name, title, cert
       alt={`Photo of ${name}`}
     />
     <div className="flex-grow">
-        <h3 className="text-xl font-bold text-gray-800">{name}</h3>
-        <p className="text-purple-600 font-medium mb-3">{title}</p>
+      <h3 className="text-xl font-bold text-gray-800">{name}</h3>
+      <p className="text-purple-600 font-medium mb-3">{title}</p>
     </div>
     <ul className="text-sm text-gray-600 text-left space-y-1 list-disc list-outside pl-5 mt-2 pt-2 border-t border-gray-200">
-        {certifications.map((cert, index) => (
-            <li key={index}>{cert}</li>
-        ))}
+      {certifications.map((cert, index) => (
+        <li key={index}>{cert}</li>
+      ))}
     </ul>
   </div>
 );
@@ -29,61 +34,105 @@ const TeamMemberCard: React.FC<TeamMemberProps> = ({ imageUrl, name, title, cert
 const Team: React.FC = () => {
   const teamData = [
     {
-      imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      name: 'Michael Chen',
-      title: 'Founder & CEO',
-      certifications: ['MBA, Business Administration', 'Professional Engineer (PE)', 'Certified Energy Manager (CEM)', 'LEED Accredited Professional (AP)'],
+      imageUrl: "/img/EC.png", // just the path as a string
+      name: "DATO ’ SRI HALIMI BIN ABD. MANAF",
+      title: "Executive Chairman",
+      certifications: [
+        "Secretary General, Ministry of Defense (2018–2019).",
+        "Deputy Secretary General (Urban Wellbeing), KPKT (2013)",
+        "Director General, Local Government Department (JKT) (2011)",
+        "Awarded Darjah Sri Sultan Ahmad Shah Pahang (SSAP) – title Dato’ Sri",
+      ],
     },
     {
-      imageUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      name: 'Jessica Adams',
-      title: 'Head of Engineering',
-      certifications: ['M.Sc. Electrical Engineering', 'NABCEP Certified PV Installation Pro', 'Certified Power Quality Professional', 'Six Sigma Black Belt'],
+      imageUrl: "/img/MDS.png",
+      name: "MR.MUHAMMAD NURHAN HAZIM BIN ABDULLAH SANI",
+      title: "Managing Director",
+      certifications: [
+        "Managing Director, Hidaka Communication (since 2019)",
+        "Expanded company’s product portfolio nationwide",
+        "Led projects improving Civil Construction Engineering & infrastructure industry",
+        "Developed a strong professional and international work culture.",
+      ],
     },
     {
-      imageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      name: 'David Lee',
-      title: 'Lead Installation Expert',
-      certifications: ['Master Electrician License', 'OSHA 30 Certification', 'NABCEP PV Technical Sales', 'Certified Journeyman Electrician'],
+      imageUrl: "/img/EDS.png",
+      name: "SR.HJ.ABDULLAH SANI BIN HJ.HANAFI",
+      title: "Executive Director",
+      certifications: [
+        "Executive Director (MRISM, MBEng).",
+        "Guided company growth as a leading Bumiputera construction company.",
+        "Ensured continuous professional development of staff",
+        "Developed a strong professional and international work culture",
+      ],
     },
     {
-      imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      name: 'Maria Garcia',
-      title: 'Customer Success Manager',
-      certifications: ['Certified Customer Experience Pro (CCXP)', 'Certified Associate in Project Management', 'Salesforce Certified Administrator', 'HubSpot Inbound Certified'],
+      imageUrl: "/img/PROF1.png",
+      name: "DR KU AZHAR BIN KU HASSAN",
+      title: "University Senior Lecturer / Professional Architect",
+      certifications: [
+        "Expert Advisor in the company’s advisory panel",
+        "Corporate Member of PAM, LAM, and RIBA",
+        "Extensive architectural consultancy and project experience in Malaysia",
+      ],
     },
     {
-        imageUrl: 'https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        name: 'James Brown',
-        title: 'Project Manager',
-        certifications: ['Project Management Professional (PMP)', 'Certified ScrumMaster (CSM)', 'Risk Management Professional (PMI-RMP)', 'Agile Certified Practitioner (PMI-ACP)'],
+      imageUrl: "/img/PROF2.png",
+      name: "ASSOC. PROF. DR. NORDIN JAMALUDIN",
+      title: "Academic / Consultant",
+      certifications: [
+        "PhD in Architecture (Cranfield University, UK)",
+        "Registered EIA Consultant & Subject Specialist",
+        "Fellow of Welding Institute of Malaysia",
+        "Member of multiple professional engineering & environmental associations",
+      ],
     },
     {
-        imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        name: 'Emily White',
-        title: 'Solar Consultant',
-        certifications: ['Certified Energy Manager (CEM)', 'NABCEP PV Associate', 'Building Performance Institute (BPI) Analyst', 'LEED Green Associate'],
+      imageUrl: "/img/PROF3.png",
+      name: "PROF.MADYA DR.MOHD WIRA BIN MOHD SHAFEI",
+      title: "Construction Management Expert",
+      certifications: [
+        "PhD in Construction Management (University of Leeds, UK)",
+        "Expert Panelist, National Competency Standard for Project Managers (CIDB)",
+        "Committee Member, Regional Centre of Expertise (RCE)",
+        "Academic experience as lecturer and researcher in construction management",
+      ],
     },
     {
-        imageUrl: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        name: 'Robert Wilson',
-        title: 'Financial Analyst',
-        certifications: ['Chartered Financial Analyst (CFA)', 'Certified Public Accountant (CPA)', 'Financial Modeling & Valuation Analyst', 'Certified Financial Planner (CFP)'],
+      imageUrl: "/img/PROF4.png",
+      name: "PROF. SR DR. SYAHRUL NIZAM BIN KAMARUZZAMAN",
+      title: "Academic / Building Expert",
+      certifications: [
+        "PhD in Building (Manchester University)",
+        "Master in Building Technology (Universiti Sains Malaysia)",
+        "Corporate Member, Association of Building Engineers UK",
+        "Senior Member, International Association of Computer Science & IT",
+      ],
     },
     {
-        imageUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        name: 'Linda Harris',
-        title: 'Marketing Director',
-        certifications: ['MBA in Marketing', 'Google Ads Certified Professional', 'HubSpot Content Marketing Certified', 'Certified Digital Marketing Pro (CDMP)'],
+      imageUrl: "/img/PROF5.png",
+      name: "PROF. MADYA DR.EMMA MAIRINIE BINTI AHMAD ZAWAWI",
+      title: "Academic / Construction Expert",
+      certifications: [
+        "PhD (University of Manchester, UK)",
+        "Master in Building Technology, University of Science Malaysia",
+        "Head of Centre of Studies, Faculty of Architecture, UiTM (2013-2018)",
+        "Head of AP246 Programme & OBE Coordinator",
+      ],
     },
     {
-        imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        name: 'Chris Martinez',
-        title: 'Operations Lead',
-        certifications: ['Certified Supply Chain Pro (CSCP)', 'Certified in Production & Inventory', 'Six Sigma Green Belt', 'Certified in Logistics & Distribution'],
+      imageUrl: "/img/PROF6.png",
+      name: "DR. HJ. HASSIM BIN MAT",
+      title: "Associate Professor / Transportation Planning",
+      certifications: [
+        "PhD in Transportation Planning (USM)",
+        "MSc in Town & Regional Planning, USM",
+        "Extensive consultancy & research in traffic impact assessment, road accident audit, and transportation planning",
+        "Active community involvement as Imam at local mosques",
+      ],
     },
   ];
-  
+
   const [itemsPerPage, setItemsPerPage] = useState(3);
 
   useEffect(() => {
@@ -93,12 +142,13 @@ const Team: React.FC = () => {
     };
 
     handleResize(); // Set initial value on mount
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const pages = Array.from({ length: Math.ceil(teamData.length / itemsPerPage) }, (_, i) =>
-    teamData.slice(i * itemsPerPage, i * itemsPerPage + itemsPerPage)
+  const pages = Array.from(
+    { length: Math.ceil(teamData.length / itemsPerPage) },
+    (_, i) => teamData.slice(i * itemsPerPage, i * itemsPerPage + itemsPerPage)
   );
 
   const [currentPage, setCurrentPage] = useState(0);
@@ -124,8 +174,12 @@ const Team: React.FC = () => {
     <section id="team" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Meet Our Experts</h2>
-          <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">A dedicated team of professionals passionate about renewable energy.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+            Meet Our Experts
+          </h2>
+          <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+            A dedicated team of professionals passionate about renewable energy.
+          </p>
         </div>
 
         <div className="relative max-w-6xl mx-auto">
@@ -137,11 +191,16 @@ const Team: React.FC = () => {
               {pages.map((page, pageIndex) => (
                 <div key={pageIndex} className="w-full flex-shrink-0">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
-                     {page.map((member) => (
-                       <div key={member.name} className={itemsPerPage === 1 ? 'max-w-sm mx-auto w-full' : ''}>
-                          <TeamMemberCard {...member} />
-                       </div>
-                     ))}
+                    {page.map((member) => (
+                      <div
+                        key={member.name}
+                        className={
+                          itemsPerPage === 1 ? "max-w-sm mx-auto w-full" : ""
+                        }
+                      >
+                        <TeamMemberCard {...member} />
+                      </div>
+                    ))}
                   </div>
                 </div>
               ))}
@@ -154,7 +213,9 @@ const Team: React.FC = () => {
                 key={index}
                 onClick={() => setCurrentPage(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 focus:outline-none ${
-                  currentPage === index ? 'bg-purple-600 scale-125' : 'bg-gray-300 hover:bg-gray-400'
+                  currentPage === index
+                    ? "bg-purple-600 scale-125"
+                    : "bg-gray-300 hover:bg-gray-400"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
