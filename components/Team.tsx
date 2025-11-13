@@ -34,7 +34,7 @@ const TeamMemberCard: React.FC<TeamMemberProps> = ({
 const Team: React.FC = () => {
   const teamData = [
     {
-      imageUrl: "/img/EC.png", // just the path as a string
+      imageUrl: "https://wimzglvajzhuaoxymugl.supabase.co/storage/v1/object/public/AMIRUL%20HAZIQ%20BIN%20MUSA/EC.png", // just the path as a string
       name: "DATO ’ SRI HALIMI BIN ABD. MANAF",
       title: "Executive Chairman",
       certifications: [
@@ -45,7 +45,7 @@ const Team: React.FC = () => {
       ],
     },
     {
-      imageUrl: "/img/MDS.png",
+      imageUrl: "https://wimzglvajzhuaoxymugl.supabase.co/storage/v1/object/public/AMIRUL%20HAZIQ%20BIN%20MUSA/MDS.png",
       name: "MR.MUHAMMAD NURHAN HAZIM BIN ABDULLAH SANI",
       title: "Managing Director",
       certifications: [
@@ -56,7 +56,7 @@ const Team: React.FC = () => {
       ],
     },
     {
-      imageUrl: "/img/EDS.png",
+      imageUrl: "https://wimzglvajzhuaoxymugl.supabase.co/storage/v1/object/public/AMIRUL%20HAZIQ%20BIN%20MUSA/EDS.png",
       name: "SR.HJ.ABDULLAH SANI BIN HJ.HANAFI",
       title: "Executive Director",
       certifications: [
@@ -67,7 +67,7 @@ const Team: React.FC = () => {
       ],
     },
     {
-      imageUrl: "/img/PROF1.png",
+      imageUrl: "https://wimzglvajzhuaoxymugl.supabase.co/storage/v1/object/public/AMIRUL%20HAZIQ%20BIN%20MUSA/PROF1.png",
       name: "DR KU AZHAR BIN KU HASSAN",
       title: "University Senior Lecturer / Professional Architect",
       certifications: [
@@ -77,7 +77,7 @@ const Team: React.FC = () => {
       ],
     },
     {
-      imageUrl: "/img/PROF2.png",
+      imageUrl: "https://wimzglvajzhuaoxymugl.supabase.co/storage/v1/object/public/AMIRUL%20HAZIQ%20BIN%20MUSA/PROF2.png",
       name: "ASSOC. PROF. DR. NORDIN JAMALUDIN",
       title: "Academic / Consultant",
       certifications: [
@@ -88,7 +88,7 @@ const Team: React.FC = () => {
       ],
     },
     {
-      imageUrl: "/img/PROF3.png",
+      imageUrl: "https://wimzglvajzhuaoxymugl.supabase.co/storage/v1/object/public/AMIRUL%20HAZIQ%20BIN%20MUSA/PROF3.png",
       name: "PROF.MADYA DR.MOHD WIRA BIN MOHD SHAFEI",
       title: "Construction Management Expert",
       certifications: [
@@ -99,7 +99,7 @@ const Team: React.FC = () => {
       ],
     },
     {
-      imageUrl: "/img/PROF4.png",
+      imageUrl: "https://wimzglvajzhuaoxymugl.supabase.co/storage/v1/object/public/AMIRUL%20HAZIQ%20BIN%20MUSA/PROF4.png",
       name: "PROF. SR DR. SYAHRUL NIZAM BIN KAMARUZZAMAN",
       title: "Academic / Building Expert",
       certifications: [
@@ -110,7 +110,7 @@ const Team: React.FC = () => {
       ],
     },
     {
-      imageUrl: "/img/PROF5.png",
+      imageUrl: "https://wimzglvajzhuaoxymugl.supabase.co/storage/v1/object/public/AMIRUL%20HAZIQ%20BIN%20MUSA/PROF5.png",
       name: "PROF. MADYA DR.EMMA MAIRINIE BINTI AHMAD ZAWAWI",
       title: "Academic / Construction Expert",
       certifications: [
@@ -121,7 +121,7 @@ const Team: React.FC = () => {
       ],
     },
     {
-      imageUrl: "/img/PROF6.png",
+      imageUrl: "https://wimzglvajzhuaoxymugl.supabase.co/storage/v1/object/public/AMIRUL%20HAZIQ%20BIN%20MUSA/PROF6.png",
       name: "DR. HJ. HASSIM BIN MAT",
       title: "Associate Professor / Transportation Planning",
       certifications: [
