@@ -67,21 +67,21 @@ const Services: React.FC = () => {
       icon: <img src="https://api.iconify.design/lucide/home.svg?color=%238b5cf6" alt="Residential Icon" className="w-8 h-8" />,
       title: 'Residential Solar',
       description: 'Custom solar panel systems for your home to reduce electricity bills and increase property value.',
-      imageUrl: "https://wkklbbvoxdytnzvtsyff.supabase.co/storage/v1/object/public/test/pexels-kindelmedia-9875415.jpg",
+      imageUrl: "/img/solar5.jpeg",
       imageAlt: "Residential home with solar panels on the roof"
     },
     {
       icon: <img src="https://api.iconify.design/lucide/building-2.svg?color=%238b5cf6" alt="Commercial Icon" className="w-8 h-8" />,
       title: 'Commercial Solar',
       description: 'Scalable solar solutions for businesses of all sizes, helping you cut operational costs and meet sustainability goals.',
-      imageUrl: "https://wkklbbvoxdytnzvtsyff.supabase.co/storage/v1/object/public/test/pexels-kindelmedia-9800005.jpg",
+      imageUrl: "/img/solar6.png",
       imageAlt: "Rooftop of a commercial building with a large solar panel installation"
     },
     {
       icon: <img src="https://api.iconify.design/lucide/battery-charging.svg?color=%238b5cf6" alt="Battery Icon" className="w-8 h-8" />,
       title: 'Battery Storage',
       description: 'Store excess solar energy for use during power outages or at night, ensuring an uninterrupted power supply.',
-      imageUrl: "https://wkklbbvoxdytnzvtsyff.supabase.co/storage/v1/object/public/test/images.jpeg",
+      imageUrl: "/img/solar2.jpeg",
       imageAlt: "Sleek, modern home battery storage unit mounted on a wall"
     },
   ];

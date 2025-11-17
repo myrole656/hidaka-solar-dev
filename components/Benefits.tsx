@@ -42,7 +42,7 @@ const Benefits: React.FC = () => {
         <section 
             id="benefits" 
             className="relative py-24 bg-cover bg-center bg-fixed"
-            style={{ backgroundImage: "url('https://wkklbbvoxdytnzvtsyff.supabase.co/storage/v1/object/public/test/pexels-sevenstormphotography-443378.jpg')" }}
+            style={{ backgroundImage: "/img/building1.jpeg')" }}
         >
              <div className="absolute inset-0 bg-black/60"></div>
             <div className="relative container mx-auto px-6">

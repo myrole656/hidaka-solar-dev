@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
         muted
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        src="https://wkklbbvoxdytnzvtsyff.supabase.co/storage/v1/object/public/test/4034091-uhd_3840_2160_30fps.mp4"
+        src="/img/solar1.mp4"
       >
         Your browser does not support the video tag.
       </video>
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
         
         <div className="flex flex-col items-center text-center">
            <img 
-              src="https://wkklbbvoxdytnzvtsyff.supabase.co/storage/v1/object/public/test/Screenshot_2025-11-11_at_8.56.26_AM-removebg-preview.png"
+              src="/img/hidaka1.jpeg"
               alt="HIDAKA COMMUNICATION Logo"
               className="h-28 w-auto mb-6 animate-fade-in-down [filter:drop-shadow(0_0_5px_rgba(255,255,255,0.8))_drop-shadow(0_0_10px_rgba(255,255,255,0.6))]"
             />

@@ -13,13 +13,13 @@ const ClientLogo: React.FC<{ name: string; logoUrl: string }> = ({ name, logoUrl
 
 const Clients: React.FC = () => {
     const clients = [
-        { name: 'Universiti Teknologi MARA', logoUrl: 'https://wkklbbvoxdytnzvtsyff.supabase.co/storage/v1/object/public/test/Screenshot_2025-11-11_at_7.43.23_PM-removebg-preview.png' },
-        { name: 'Tenaga Nasional', logoUrl: 'https://wkklbbvoxdytnzvtsyff.supabase.co/storage/v1/object/public/test/Screenshot_2025-11-11_at_7.42.58_PM-removebg-preview%20(1).png' },
-        { name: 'POLIMAS', logoUrl: 'https://wkklbbvoxdytnzvtsyff.supabase.co/storage/v1/object/public/test/Screenshot_2025-11-11_at_7.43.14_PM-removebg-preview.png' },
-        { name: 'RNEM Engineering', logoUrl: 'https://wkklbbvoxdytnzvtsyff.supabase.co/storage/v1/object/public/test/Screenshot_2025-11-11_at_7.58.01_PM-removebg-preview.png' },
-        { name: 'Fokus Murni SDN BHD', logoUrl: 'https://wkklbbvoxdytnzvtsyff.supabase.co/storage/v1/object/public/test/Screenshot_2025-11-11_at_7.57.51_PM-removebg-preview.png' },
-        { name: 'HIDAKA Construction', logoUrl: 'https://wkklbbvoxdytnzvtsyff.supabase.co/storage/v1/object/public/test/Screenshot_2025-11-11_at_7.39.03_PM-removebg-preview.png' },
-        { name: 'Continental', logoUrl: 'https://wkklbbvoxdytnzvtsyff.supabase.co/storage/v1/object/public/test/Pneuamatici%20Continental.jpeg' },
+        { name: 'Universiti Teknologi MARA', logoUrl: '/img/uitm.jpeg' },
+        { name: 'Tenaga Nasional', logoUrl: '/img/tnb1.jpeg' },
+        { name: 'POLIMAS', logoUrl: '/img/polimas.jpeg' },
+        { name: 'RNEM Engineering', logoUrl: '/img/rnem.jpeg' },
+        { name: 'Fokus Murni SDN BHD', logoUrl: '/img/fm.jpeg' },
+        { name: 'HIDAKA Construction', logoUrl: '/img/hidaka2.jpeg' },
+        { name: 'Continental', logoUrl: '/img/continental.jpeg' },
     ];
 
     const topRowClients = clients.slice(0, 4);
